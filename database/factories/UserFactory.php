@@ -1,5 +1,6 @@
 <?php
-
+ /*used to automate the creation of users and passwords in order to be used for testing*/
+ 
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;

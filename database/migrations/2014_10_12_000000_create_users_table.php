@@ -1,4 +1,5 @@
 <?php
+/*used to populate database with empty tables, columnds, etc. You can also take live data from users and take in that data from the users and populate the databases */
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;

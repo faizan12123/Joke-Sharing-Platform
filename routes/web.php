@@ -12,7 +12,16 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+/*format routes: Route::get($uri, $callback); */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::view('/', 'welcome');
+
+Route::get('/greeting', function () {
+    return view('greeting', ['name' => 'Faizan', 'movie_title' => 'Matrix']); #dependency injection
 });
+
+// Route::redirect('/greeting', '/');

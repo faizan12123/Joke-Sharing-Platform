@@ -1,4 +1,5 @@
 <?php
+/*uses factory to seed the tables with the data and it basically fills up the databases*/
 
 namespace Database\Seeders;
 
