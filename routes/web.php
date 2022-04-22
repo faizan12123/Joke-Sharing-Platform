@@ -23,5 +23,7 @@ Route::view('/', 'welcome');
 Route::get('/greeting', function () {
     return view('greeting', ['name' => 'Faizan', 'movie_title' => 'Matrix']); #dependency injection
 });
-
+Route::get('/home', function () {
+    return view('home'); 
+});
 // Route::redirect('/greeting', '/');
