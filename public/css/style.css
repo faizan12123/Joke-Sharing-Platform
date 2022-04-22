@@ -15,6 +15,7 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 10vh;
 }
 
 nav .nav-left {
@@ -34,6 +35,7 @@ nav .nav-left {
 nav .nav-left img {
   margin: 0;
   height: 40px;
+  margin-right: 1.5vw;
 }
 
 nav .nav-left p {
@@ -58,10 +60,23 @@ nav .nav-right {
 
 nav .nav-right p {
   font-family: 'Holtwood One SC', serif;
-  font-size: 18px;
-  color: white;
+  font-size: 15px;
+  color: black;
   background-color: #FFB850;
-  padding: 15px;
+  padding: 10px 15px;
   border-radius: 25px;
+}
+
+.leftSideBar-container {
+  height: 90vh;
+  width: 30vw;
+  background-color: #D8D2C7;
+  position: fixed;
+}
+
+.homeFeed-container {
+  height: 90vh;
+  background-color: #FFF4E9;
+  margin-left: 30vw;
 }
 /*# sourceMappingURL=style.css.map */
