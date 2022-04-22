@@ -1,8 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap");
 html, body {
   margin: 0;
 }
 
-nav img {
-  height: 20px;
+nav {
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .nav-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5vw;
+}
+
+nav .nav-left img {
+  margin: 0;
+  height: 40px;
+}
+
+nav .nav-left p {
+  font-family: 'Holtwood One SC', serif;
+  font-size: 38px;
+  color: #FFB850;
+}
+
+nav .nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 5vw;
+}
+
+nav .nav-right p {
+  font-family: 'Holtwood One SC', serif;
+  font-size: 18px;
+  color: white;
+  background-color: #FFB850;
+  padding: 15px;
+  border-radius: 25px;
 }
 /*# sourceMappingURL=style.css.map */
