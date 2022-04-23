@@ -33,10 +33,16 @@ Route::view('/login', 'login');
 Route::get('/greeting', function () {
     return view('greeting', ['name' => 'Faizan', 'movie_title' => 'Matrix']); #dependency injection
 });
+<<<<<<< HEAD
 
 Route:: resource('user', UserController::class);
 Route:: get('/users', [UserController::class, 'show_all']);
 
 Route:: view('/register', 'register');
 
+=======
+Route::get('/home', function () {
+    return view('home'); 
+});
+>>>>>>> d61baedd390927b0002f77feaa9e74b5d54bde8f
 // Route::redirect('/greeting', '/');
