@@ -50,4 +50,8 @@ Route::get('/home', function () {
 Route::get('/loginbub', function () {
     return view('loginUI'); 
 });
+
+Route::get('/registerbub', function () {
+    return view('registerUI'); 
+});
 // Route::redirect('/greeting', '/');

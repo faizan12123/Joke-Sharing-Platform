@@ -174,7 +174,7 @@ nav .nav-right a {
   color: #DEB4B4;
 }
 
-.login-container .login-form-container form input[type=text], .login-container .login-form-container form input[type=password] {
+.login-container .login-form-container form input[type=text], .login-container .login-form-container form input[type=password], .login-container .login-form-container form input[type=email] {
   background-color: transparent;
   border-color: transparent;
   border-bottom-color: #DEB4B4;
