@@ -10,6 +10,7 @@
 </head>
 <body>
     <main class="login-container">
+        <a class="login-toHome" href="/home"> < home </a>
         <section class="login-form-container">
             <div class="login-header">
                 <img src="logo.png"/>
