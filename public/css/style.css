@@ -36,6 +36,12 @@ nav .nav-left img {
   margin: 0;
   height: 40px;
   margin-right: 1.5vw;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 nav .nav-left p {
@@ -58,18 +64,19 @@ nav .nav-right {
   margin-right: 5vw;
 }
 
-nav .nav-right p {
+nav .nav-right a {
   font-family: 'Holtwood One SC', serif;
   font-size: 15px;
   color: black;
   background-color: #FFB850;
   padding: 10px 15px;
   border-radius: 25px;
+  text-decoration: none;
 }
 
 .leftSideBar-container {
   height: 90vh;
-  width: 25vw;
+  width: 20vw;
   background-color: #D8D2C7;
   position: fixed;
 }
@@ -77,6 +84,220 @@ nav .nav-right p {
 .homeFeed-container {
   height: 90vh;
   background-color: #FFF4E9;
-  margin-left: 25vw;
+  margin-left: 20vw;
+}
+
+.leftSideBar-container {
+  font-family: 'Holtwood One SC', serif;
+}
+
+.leftSideBar-container h2 {
+  margin-left: 20%;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+
+.leftSideBar-container ul {
+  list-style: none;
+}
+
+.leftSideBar-container a {
+  text-decoration: none;
+  color: #685B5B;
+  font-size: 15px;
+  line-height: 3;
+  margin-left: 10%;
+}
+
+.leftSideBar-container a:hover {
+  color: #847878;
+  margin-left: 15%;
+}
+
+.leftSideBar-container .arrow {
+  display: none;
+}
+
+.login-container {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-container .login-toHome {
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  left: 5%;
+  top: 50px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.login-container .login-form-container {
+  width: 30%;
+  min-width: 500px;
+  height: 80%;
+  min-height: 566px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(16.02%, #9E3939), color-stop(69.68%, rgba(179, 88, 25, 0.992187)), color-stop(84.7%, rgba(185, 97, 16, 0.99)));
+  background: linear-gradient(180deg, #9E3939 16.02%, rgba(179, 88, 25, 0.992187) 69.68%, rgba(185, 97, 16, 0.99) 84.7%);
+  border-radius: 20px;
+}
+
+.login-container .login-form-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #DEB4B4;
+}
+
+.login-container .login-form-container form input[type=text], .login-container .login-form-container form input[type=password] {
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom-color: #DEB4B4;
+  height: 25px;
+  width: 300px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.login-container .login-form-container form ::-webkit-input-placeholder {
+  color: #F5DDDD;
+  font-size: 20px;
+  opacity: 1;
+  /* Firefox */
+}
+
+.login-container .login-form-container form :-ms-input-placeholder {
+  color: #F5DDDD;
+  font-size: 20px;
+  opacity: 1;
+  /* Firefox */
+}
+
+.login-container .login-form-container form ::-ms-input-placeholder {
+  color: #F5DDDD;
+  font-size: 20px;
+  opacity: 1;
+  /* Firefox */
+}
+
+.login-container .login-form-container form ::placeholder {
+  color: #F5DDDD;
+  font-size: 20px;
+  opacity: 1;
+  /* Firefox */
+}
+
+.login-container .login-form-container form :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #F5DDDD;
+  font-size: 20px;
+}
+
+.login-container .login-form-container form ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #F5DDDD;
+  font-size: 20px;
+}
+
+.login-container .login-form-container form .loginForm-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-container .login-form-container form .loginForm-footer button {
+  width: 127px;
+  height: 40px;
+  background: #9E3939;
+  border-radius: 13px;
+  font-family: 'Holtwood One SC', serif;
+  color: white;
+  font-size: 16px;
+  border-color: transparent;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.login-container .login-form-container form .loginForm-footer a {
+  margin-top: 25px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #F5DDDD;
+  display: block;
+  font-family: 'Holtwood One SC', serif;
+}
+
+.login-container .login-form-container .login-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10%;
+}
+
+.login-container .login-form-container .login-header img {
+  height: 60px;
+  margin-right: 2.5%;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.login-container .login-form-container .login-header h2 {
+  color: #FFB850;
+  font-family: 'Holtwood One SC', serif;
+  font-size: 40px;
+  letter-spacing: 5px;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 /*# sourceMappingURL=style.css.map */

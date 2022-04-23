@@ -44,3 +44,10 @@ Route:: get('/users', [UserController::class, 'show_all']);
 Route:: get('/login', [UserController::class, 'login']);
 
 
+Route::get('/home', function () {
+    return view('home'); 
+});
+Route::get('/loginbub', function () {
+    return view('loginUI'); 
+});
+// Route::redirect('/greeting', '/');

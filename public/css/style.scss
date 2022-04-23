@@ -3,7 +3,17 @@ $primary-color: #FFB850;
 
 //layout
 $nav-height: 10vh;
-$leftBar-width: 25vw;
+$leftBar-width: 20vw;
+
+@mixin imageProperties {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    
+}
 
 html, body{
     margin: 0;
@@ -25,6 +35,7 @@ nav{
             margin:0;
             height: 40px;
             margin-right: 1.5vw;
+            @include imageProperties;
         }
         p{
             font-family: 'Holtwood One SC', serif;
@@ -38,13 +49,14 @@ nav{
         align-items: center;
         margin-right: 5vw;
 
-        p{
+        a{
             font-family: 'Holtwood One SC', serif;
             font-size: 15px;
             color: black;
             background-color: $primary-color;
             padding: 10px 15px;
             border-radius: 25px;
+            text-decoration: none;
         }
     }
 }
@@ -59,4 +71,144 @@ nav{
     height: 100 - $nav-height; //change later
     background-color: #FFF4E9;
     margin-left: $leftBar-width;
+}
+
+.leftSideBar-container{
+    font-family: 'Holtwood One SC', serif;
+    h2{
+        margin-left: 20%;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+    }
+    ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color: #685B5B;
+        font-size: 15px;
+        line-height: 3;
+        margin-left: 10%;
+
+        &:hover{
+            color: #847878;
+            margin-left: 15%;
+        }
+    }
+    .arrow{
+        display:none;
+    }
+}
+
+.login-container{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .login-toHome{
+        color: white;
+        text-decoration: none;
+        position: absolute;
+        left: 5%;
+        top: 50px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .login-form-container{
+        width: 30%;
+        min-width: 500px;
+        height: 80%;
+        min-height: 566px;
+        background: linear-gradient(180deg, #9E3939 16.02%, rgba(179, 88, 25, 0.992187) 69.68%, rgba(185, 97, 16, 0.99) 84.7%);
+        border-radius: 20px;
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #DEB4B4;
+            input[type=text], input[type=password]{
+                background-color: transparent;
+                border-color: transparent;
+                border-bottom-color: #DEB4B4;
+                height: 25px;
+                width: 300px;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                padding-left: 10px;
+            }
+            ::placeholder {
+                color: #F5DDDD;
+                font-size: 20px;
+                opacity: 1; /* Firefox */
+              }
+              
+              :-ms-input-placeholder { /* Internet Explorer 10-11 */
+               color:#F5DDDD;
+               font-size: 20px;
+              }
+              
+              ::-ms-input-placeholder { /* Microsoft Edge */
+               color: #F5DDDD;
+               font-size: 20px;
+              }
+
+              .loginForm-footer{
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                button{
+                    width: 127px;
+                    height: 40px;
+                    background: #9E3939;
+                    border-radius: 13px;
+                    font-family: 'Holtwood One SC', serif;
+                    color: white;
+  
+                    font-size: 16px;
+                    border-color: transparent;
+  
+                    margin-top: 40px;
+                    text-align: center;
+                }
+                a{
+                    margin-top: 25px;
+                    font-size: 15px;
+                    text-decoration: none;
+                    color: #F5DDDD;
+                    display: block;
+                    font-family: 'Holtwood One SC', serif;
+                }
+              }
+
+              
+        }
+
+        .login-header{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10%;
+            img{
+                height: 60px;
+                margin-right: 2.5%;
+                @include imageProperties;
+                
+            }
+            h2{
+                color: $primary-color;
+                font-family: 'Holtwood One SC', serif;
+                font-size: 40px;
+                letter-spacing: 5px;
+                @include imageProperties;
+            }
+        }
+    }
 }

@@ -4,6 +4,6 @@
         <p> Trunc </p>
     </div>
     <div class="nav-right">
-        <p> Log in</p>
+        <a href="/loginbub"> Log in</a>
     </div>
 </nav>
