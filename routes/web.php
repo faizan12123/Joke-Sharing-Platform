@@ -31,8 +31,8 @@ use App\Http\Controllers\UserController;
 
 
 // can be used to get values from the user and inject them into the view. For example they can pass a value through the get request and then we can extract them and dump them into the route.
-Route::get('/movies', function () {
-    return view('movies', ['name' => 'Faizan', 'movie_title' => 'Matrix']); #dependency injection
+Route::get('/memes', function () {
+    return view('memes', ['name' => 'Faizan', 'movie_title' => 'Matrix']); #dependency injection
 });
 
 // when user route is rendered, use the usecontroller as it's controller
