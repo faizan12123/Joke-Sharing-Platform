@@ -64,13 +64,14 @@ nav .nav-right {
   margin-right: 5vw;
 }
 
-nav .nav-right p {
+nav .nav-right a {
   font-family: 'Holtwood One SC', serif;
   font-size: 15px;
   color: black;
   background-color: #FFB850;
   padding: 10px 15px;
   border-radius: 25px;
+  text-decoration: none;
 }
 
 .leftSideBar-container {

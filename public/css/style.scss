@@ -49,13 +49,14 @@ nav{
         align-items: center;
         margin-right: 5vw;
 
-        p{
+        a{
             font-family: 'Holtwood One SC', serif;
             font-size: 15px;
             color: black;
             background-color: $primary-color;
             padding: 10px 15px;
             border-radius: 25px;
+            text-decoration: none;
         }
     }
 }
