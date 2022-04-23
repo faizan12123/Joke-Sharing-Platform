@@ -37,6 +37,7 @@ class UserController extends Controller
      //function will be hit when there is a post. For example when a form is submitted, it will do a post and execute this function.
     public function store(Request $request)
     {
+        
         //storing User array into User database table and assigning it to the variable 'user'
         $user = User::firstOrCreate([
             'name' => $request->input('name'),
