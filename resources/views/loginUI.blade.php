@@ -15,6 +15,34 @@
                 <img src="logo.png"/>
                 <h2> trenc </h2>
             </div>
+            <form method="POST">
+                @csrf
+                <div class=""> <!-- ADD ACTION-->
+                    <input type="text" placeholder="Email" id="email" class="form-control" name="email" required autofocus>
+                    @if ($errors->has('email'))
+                        <span class="text-danger">{{ $errors->first('email') }}</span>
+                    @endif
+                </div>
+ 
+                <div class="">
+                   <input type="password" placeholder="Password" id="password" class="form-control" name="password" required>
+                    @if ($errors->has('password'))
+                        <span class="text-danger">{{ $errors->first('password') }}</span>
+                    @endif
+                </div>
+ 
+                <div class="">
+                   <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="remember"> Remember Me
+                        </label>
+                    </div>
+                </div>
+ 
+                <div class="">
+                    <button type="submit" class="btn btn-dark btn-block">Log In</button>
+                </div>
+            </form>
         </section>
     </main>
 </body>
