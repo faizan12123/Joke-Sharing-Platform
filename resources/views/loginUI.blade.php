@@ -39,8 +39,9 @@
                     </div>
                 </div>
  
-                <div class="">
+                <div class="loginForm-footer">
                     <button type="submit" class="btn btn-dark btn-block">Log In</button>
+                    <a href="/register">No Account? Register </a>
                 </div>
             </form>
         </section>
