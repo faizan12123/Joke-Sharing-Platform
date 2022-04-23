@@ -11,7 +11,10 @@
 <body>
     <main class="login-container">
         <section class="login-form-container">
-            hello
+            <div class="login-header">
+                <img src="logo.png"/>
+                <h2> trenc </h2>
+            </div>
         </section>
     </main>
 </body>
