@@ -42,4 +42,7 @@ Route:: view('/register', 'register');
 Route::get('/home', function () {
     return view('home'); 
 });
+Route::get('/loginbub', function () {
+    return view('loginUI'); 
+});
 // Route::redirect('/greeting', '/');
