@@ -69,7 +69,7 @@ nav .nav-right p {
 
 .leftSideBar-container {
   height: 90vh;
-  width: 25vw;
+  width: 20vw;
   background-color: #D8D2C7;
   position: fixed;
 }
@@ -77,6 +77,37 @@ nav .nav-right p {
 .homeFeed-container {
   height: 90vh;
   background-color: #FFF4E9;
-  margin-left: 25vw;
+  margin-left: 20vw;
+}
+
+.leftSideBar-container {
+  font-family: 'Holtwood One SC', serif;
+}
+
+.leftSideBar-container h2 {
+  margin-left: 20%;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+
+.leftSideBar-container ul {
+  list-style: none;
+}
+
+.leftSideBar-container a {
+  text-decoration: none;
+  color: #685B5B;
+  font-size: 15px;
+  line-height: 3;
+  margin-left: 10%;
+}
+
+.leftSideBar-container a:hover {
+  color: #847878;
+  margin-left: 15%;
+}
+
+.leftSideBar-container .arrow {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

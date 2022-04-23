@@ -3,7 +3,7 @@ $primary-color: #FFB850;
 
 //layout
 $nav-height: 10vh;
-$leftBar-width: 25vw;
+$leftBar-width: 20vw;
 
 html, body{
     margin: 0;
@@ -59,4 +59,31 @@ nav{
     height: 100 - $nav-height; //change later
     background-color: #FFF4E9;
     margin-left: $leftBar-width;
+}
+
+.leftSideBar-container{
+    font-family: 'Holtwood One SC', serif;
+    h2{
+        margin-left: 20%;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+    }
+    ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color: #685B5B;
+        font-size: 15px;
+        line-height: 3;
+        margin-left: 10%;
+
+        &:hover{
+            color: #847878;
+            margin-left: 15%;
+        }
+    }
+    .arrow{
+        display:none;
+    }
 }
