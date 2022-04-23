@@ -1,3 +1,5 @@
+
+<link rel="stylesheet" href={{ asset('css/bootstrap.min.css') }}>
 <section class="leftSideBar-container">
     <h2> Categories </h2>
     <ul>
@@ -9,3 +11,4 @@
         <li><a href="/greeting">tech</a></li>
     </ul>
 </section>
+</div>

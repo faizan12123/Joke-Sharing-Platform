@@ -1,10 +1,12 @@
 <?php
 
+use App\Http\Controllers\MemeController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\UserController;
+
 
 
 
@@ -44,19 +46,10 @@ Route:: resource('/user', UserController::class);
 
 // Route:: get('/register', [UserController::class, 'create']);
 Route:: get('/register', [UserController::class, 'create']);
+
 Route:: post('/register', [UserController::class,  'store']);
 
 Route:: get('/login', [UserController::class, 'login']);
 
-
-Route::get('/home', function () {
-    return view('home'); 
-});
-// Route::get('/loginbub', function () {
-//     return view('loginUI'); 
-// });
-
-// Route::get('/register', function () {
-//     return view('registerUI'); 
-// });
-// Route::redirect('/greeting', '/');
+// Route:: resource('/home', MemeController::class);
+Route:: get('/home', [MemeController::class, 'show_all']);
