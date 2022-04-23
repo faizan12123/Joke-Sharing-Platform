@@ -137,6 +137,16 @@ nav .nav-right a {
           align-items: center;
 }
 
+.login-container .login-toHome {
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  left: 5%;
+  top: 50px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
 .login-container .login-form-container {
   width: 30%;
   min-width: 500px;
