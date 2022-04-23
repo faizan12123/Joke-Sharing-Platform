@@ -39,7 +39,12 @@ Route::get('/memes', function () {
 Route:: resource('/user', UserController::class);
 
 //when the users route is rendered use the showAll function of the usercontroller as it's controller
-Route:: get('/users', [UserController::class, 'show_all']);
+
+// Route:: get('/users', [UserController::class, 'show_all']);
+
+// Route:: get('/register', [UserController::class, 'create']);
+Route:: get('/register', [UserController::class, 'create']);
+Route:: post('/register', [UserController::class,  'store']);
 
 Route:: get('/login', [UserController::class, 'login']);
 
@@ -47,11 +52,11 @@ Route:: get('/login', [UserController::class, 'login']);
 Route::get('/home', function () {
     return view('home'); 
 });
-Route::get('/loginbub', function () {
-    return view('loginUI'); 
-});
+// Route::get('/loginbub', function () {
+//     return view('loginUI'); 
+// });
 
-Route::get('/registerbub', function () {
-    return view('registerUI'); 
-});
+// Route::get('/register', function () {
+//     return view('registerUI'); 
+// });
 // Route::redirect('/greeting', '/');

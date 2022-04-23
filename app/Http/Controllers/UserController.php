@@ -24,7 +24,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('register');
+        return view('registerUI');
     }
 
     /**
@@ -47,7 +47,7 @@ class UserController extends Controller
             'remember_token' => $request->input('_token'),
         ]);
         //returns the user.blade.php view and passes it the 'user' variable with the target id
-        return view("/user/$user->id");
+        return redirect('/home');
     }
 
     //login user with credentials
@@ -56,7 +56,7 @@ class UserController extends Controller
         //storing User array into User database table and assigning it to the variable 'user'
         // $user = 
 
-        return view("/login");
+        return view("/loginUI");
     }
 
 
@@ -69,7 +69,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        return view('user', [
+        return view('registerUI', [
             // finds a user where the ID is "something" from the User model and stores it in the variable user to later be called by a view to be displayed. ID parameter of 1 is received when user enters route as localhost/user/1
             'user' => User::find($id),
         ]);

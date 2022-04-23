@@ -16,7 +16,7 @@
                 <img src="logo.png"/>
                 <h2> trenc </h2>
             </div>
-            <form method="POST">
+            <form method="POST" action="/register">
                 @csrf
                 <div class="form-group">
                     <input type="text" placeholder="Name" class="form-control" id="name" name="name">
