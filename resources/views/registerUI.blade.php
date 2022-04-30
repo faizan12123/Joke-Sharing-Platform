@@ -33,7 +33,7 @@
  
                 <div class="loginForm-footer">
                     <button type="submit" style="margin-top: 20px;" class="btn btn-dark btn-block">Sign Up</button>
-                    <a href="/loginbub">Have an Account? Login </a>
+                    <a href="/login">Have an Account? Login </a>
                 </div>
             </form>
         </section>

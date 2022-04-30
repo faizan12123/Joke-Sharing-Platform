@@ -16,6 +16,47 @@ class MemesSeeder extends Seeder
     public function run()
     {
         $memes = [
+            
+            [
+                "name" => "faizan",
+                "genre" => "Business",
+                "joke" => "I just started a business where we specialize in weighing tiny objects. Its a small scale operation.",
+            ],
+            [
+                "name" => "faizan",
+                "genre" => "Business",
+                "joke" => "I tried to start a hot air ballooning business but it never took off.",
+            ],
+            [
+                "name" => "faizan",
+                "genre" => "Business",
+                "joke" => "What sort of money do need if you want to start your own landscaping business? A hedge fund.",
+            ],
+            [
+                "name" => "faizan",
+                "genre" => "Business",
+                "joke" => "Ive started a business making boats in my attic. Sails are going through the roof.",
+            ],
+            [
+                "name" => "faizan",
+                "genre" => "Business ",
+                "joke" => "I used to be a doctor but then I lost patients.",
+            ],
+            [
+                "name" => "faizan",
+                "genre" => "Business",
+                "joke" => "I used to be a banker but I lost interest.",
+            ],
+            [
+                "name" => "faizan",
+                "genre" => "Business",
+                "joke" => "I used to own a donut making company, but I got fed up of the hole business.",
+            ],
+            [
+                "name" => "faizan",
+                "genre" => "Business",
+                "joke" => "My boss asked me to make a presentation and said I should start it with a joke. So I put my payslip on the first slide.",
+            ],
             [
                 "name" => "faizan",
                 "genre" => "Tech",
@@ -65,46 +106,6 @@ class MemesSeeder extends Seeder
                 "name" => "faizan",
                 "genre" => "Tech",
                 "joke" => "What was the spider doing on the computer? He was making a web-site!",
-            ],
-            [
-                "name" => "faizan",
-                "genre" => "Business",
-                "joke" => "I just started a business where we specialize in weighing tiny objects. Its a small scale operation.",
-            ],
-            [
-                "name" => "faizan",
-                "genre" => "Business",
-                "joke" => "I tried to start a hot air ballooning business but it never took off.",
-            ],
-            [
-                "name" => "faizan",
-                "genre" => "Business",
-                "joke" => "What sort of money do need if you want to start your own landscaping business? A hedge fund.",
-            ],
-            [
-                "name" => "faizan",
-                "genre" => "Business",
-                "joke" => "Ive started a business making boats in my attic. Sails are going through the roof.",
-            ],
-            [
-                "name" => "faizan",
-                "genre" => "Business ",
-                "joke" => "I used to be a doctor but then I lost patients.",
-            ],
-            [
-                "name" => "faizan",
-                "genre" => "Business",
-                "joke" => "I used to be a banker but I lost interest.",
-            ],
-            [
-                "name" => "faizan",
-                "genre" => "Business",
-                "joke" => "I used to own a donut making company, but I got fed up of the hole business.",
-            ],
-            [
-                "name" => "faizan",
-                "genre" => "Business",
-                "joke" => "My boss asked me to make a presentation and said I should start it with a joke. So I put my payslip on the first slide.",
             ],
             [
                 "name" => "faizan",
