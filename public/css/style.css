@@ -76,15 +76,16 @@ nav .nav-right a {
 
 .leftSideBar-container {
   height: 90vh;
-  width: 20vw;
+  float: left;
   background-color: #D8D2C7;
-  position: fixed;
+  padding-right:10%;
 }
 
 .homeFeed-container {
   height: 90vh;
   background-color: #FFF4E9;
-  margin-left: 20vw;
+ 
+  
 }
 
 .leftSideBar-container {
