@@ -16,7 +16,7 @@
                 <img src="logo.png"/>
                 <h2> trenc </h2>
             </div>
-            <form method="POST" action="/home">
+            <form method="POST" >
                 @csrf
                 <div class=""> 
                     <input type="text" placeholder="Email" id="email" class="form-control" name="email" required autofocus>

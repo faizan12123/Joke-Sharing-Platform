@@ -23,7 +23,7 @@ class LoginController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
  
-            return redirect()->intended('home');
+            return redirect()->intended('/home');
         }
  
         return back()->withErrors([
@@ -35,6 +35,18 @@ class LoginController extends Controller
 public function login() {
    
     return view("/loginUI");
+}
+
+public function logout(Request $request)
+{
+    Auth::logout();
+ 
+    $request->session()->invalidate();
+ 
+    $request->session()->regenerateToken();
+    $request->session()->flush();
+ 
+    return redirect('/login');
 }
     
 }
