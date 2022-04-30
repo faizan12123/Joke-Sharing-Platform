@@ -46,6 +46,10 @@ Route:: post('/register', [UserController::class, 'store']);
 Route:: get('/login', [loginController::class, 'login']);
 Route:: post('/login', [loginController::class, 'authenticate']);
 Route:: get('/home', [MemeController::class, 'show_all']);
+Route:: get('/tech', [MemeController::class, 'show_tech']);
+Route:: get('/business', [MemeController::class, 'show_business']);
+Route:: get('/other', [MemeController::class, 'show_other']);
+Route:: get('/biology', [MemeController::class, 'show_bio']);
 Route::get('/logout', [loginController::class, 'logout']);
 
 

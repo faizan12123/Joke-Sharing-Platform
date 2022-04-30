@@ -59,23 +59,34 @@ class MemeController extends Controller
 
     public function show_tech()
     {
-        return view('home', [
-            // when home view is rendered, display all memes
-            'memes' => memes::all(),
+
+        // dd(memes::where('genre', 'Tech'));
+        
+        return view('tech', [
+           
+            'tech' => memes::whereIn('genre', ['tech'])->get(),
         ]);
     }
     public function show_bio()
     {
-        return view('home', [
-            // when home view is rendered, display all memes
-            'memes' => memes::all(),
+        return view('bio', [
+           
+            'bio' => memes::whereIn('genre', ['biology'])->get(),
         ]);
     }
     public function show_business()
     {
-        return view('home', [
-            // when home view is rendered, display all memes
-            'memes' => memes::all(),
+        return view('business', [
+           
+            'business' => memes::whereIn('genre', ['business'])->get(),
+        ]);
+    }
+
+    public function show_other()
+    {
+        return view('other', [
+           
+            'other' => memes::whereIn('genre', ['Other'])->get(),
         ]);
     }
 
