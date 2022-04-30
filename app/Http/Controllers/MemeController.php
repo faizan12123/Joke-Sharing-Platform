@@ -57,6 +57,28 @@ class MemeController extends Controller
         ]);
     }
 
+    public function show_tech()
+    {
+        return view('home', [
+            // when home view is rendered, display all memes
+            'memes' => memes::all(),
+        ]);
+    }
+    public function show_bio()
+    {
+        return view('home', [
+            // when home view is rendered, display all memes
+            'memes' => memes::all(),
+        ]);
+    }
+    public function show_business()
+    {
+        return view('home', [
+            // when home view is rendered, display all memes
+            'memes' => memes::all(),
+        ]);
+    }
+
     /**
      * Show the form for editing the specified resource.
      *
