@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -43,7 +44,7 @@ class UserController extends Controller
             'name' => $request->input('name'),
             'email' => $request->input('email'),
             'email_verified_at' => now(),
-            'password' => $request->input('password'), // password
+            'password' =>Hash::make ($request->input('password')), // password
             'remember_token' => $request->input('_token'),
         ]);
         //returns the user.blade.php view and passes it the 'user' variable with the target id
@@ -51,10 +52,9 @@ class UserController extends Controller
     }
 
     //login user with credentials
-    public function login()
+    public function login(Request $request)
     {
-        //storing User array into User database table and assigning it to the variable 'user'
-        // $user = 
+      
 
         return view("/loginUI");
     }

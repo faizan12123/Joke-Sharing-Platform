@@ -16,9 +16,9 @@
                 <img src="logo.png"/>
                 <h2> trenc </h2>
             </div>
-            <form method="POST">
+            <form method="POST" action="/home">
                 @csrf
-                <div class=""> <!-- ADD ACTION-->
+                <div class=""> 
                     <input type="text" placeholder="Email" id="email" class="form-control" name="email" required autofocus>
                     @if ($errors->has('email'))
                         <span class="text-danger">{{ $errors->first('email') }}</span>
