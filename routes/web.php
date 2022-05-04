@@ -43,14 +43,14 @@ use App\Http\Controllers\loginController;
 Route:: resource('/user', UserController::class);
 Route:: get('/register', [UserController::class, 'create']);
 Route:: post('/register', [UserController::class, 'store']);
-Route:: get('/login', [loginController::class, 'login']);
-Route:: post('/login', [loginController::class, 'authenticate']);
+Route:: get('/login', [LoginController::class, 'login']);
+Route:: post('/login', [LoginController::class, 'authenticate']);
 Route:: get('/home', [MemeController::class, 'show_all']);
 Route:: get('/tech', [MemeController::class, 'show_tech']);
 Route:: get('/business', [MemeController::class, 'show_business']);
 Route:: get('/other', [MemeController::class, 'show_other']);
 Route:: get('/biology', [MemeController::class, 'show_bio']);
-Route::get('/logout', [loginController::class, 'logout']);
+Route::get('/logout', [LoginController::class, 'logout']);
 
 
 
