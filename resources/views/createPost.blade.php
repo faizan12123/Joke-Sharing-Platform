@@ -24,7 +24,7 @@
                     <input type="text" placeholder="Name" class="" id="name" name="name" required>
                 </div>
 
-                <<div class="">
+                <div class="">
                     <select name="genre" id="genre" required>
                         <option value="Genre" disabled selected>Genre</option>
                         <option value="tech">Tech</option>
