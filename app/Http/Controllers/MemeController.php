@@ -24,7 +24,8 @@ class MemeController extends Controller
      */
     public function create()
     {
-        return view('home');
+        return view('createPost');
+        //should have form
     }
 
     /**
@@ -35,7 +36,14 @@ class MemeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //storing User array into User database table and assigning it to the variable 'user'
+        $meme = memes::firstOrCreate([
+            'name' => $request->input('name'),
+            'genre' => $request->input('email'),
+            'joke' => $request->input('email')
+        ]);
+        //returns the user.blade.php view and passes it the 'user' variable with the target id
+        return redirect('/home');
     }
 
     /**
