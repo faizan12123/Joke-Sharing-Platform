@@ -53,9 +53,9 @@ Route:: get('/biology', [MemeController::class, 'show_bio']);
 Route::get('/logout', [LoginController::class, 'logout']);
 
 //create post view
-Route::get('/createPost', [MemeController::class. 'create']);
+Route::get('/createPost', [MemeController::class, 'create']);
 //POST the meme
-Route::post('/createPost',[MemeController::class. 'store'] )
+Route::post('/createPost',[MemeController::class, 'store'] );
 
 
 
