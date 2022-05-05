@@ -151,31 +151,53 @@ nav .nav-right a {
   padding: 0 10px;
 }
 
-.homeFeed-container .rating-container .rate:not(:checked) > input {
+.homeFeed-container .rating-container .rate:not(:checked) > input[type=radio] {
   position: absolute;
   top: -9999px;
+}
+
+.homeFeed-container .rating-container .rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
 }
 
 .homeFeed-container .rating-container .rate:not(:checked) > label:before {
   content: '★ ';
 }
 
-.homeFeed-container .rating-container .rate > input:checked ~ label {
+.homeFeed-container .rating-container .rate > input[type=radio]:checked ~ label {
   color: #ffc700;
 }
 
-.homeFeed-container .rating-container .rate:not(:checked) > label:hover, .homeFeed-container .rating-container .rate:not(:checked) > label:hover ~ label {
+.homeFeed-container .rating-container .rate:not(:checked) > label:hover,
+.homeFeed-container .rating-container .rate:not(:checked) > label:hover ~ label {
   color: #deb217;
 }
 
-.homeFeed-container .rating-container .rate > input:checked + label:hover, .homeFeed-container .rating-container .rate > input:checked + label:hover ~ label, .homeFeed-container .rating-container .rate > input:checked ~ label:hover,
-.homeFeed-container .rating-container .rate > input:checked ~ label:hover ~ label, .homeFeed-container .rating-container .rate > label:hover ~ input:checked ~ label {
+.homeFeed-container .rating-container .rate > input[type=radio]:checked + label:hover,
+.homeFeed-container .rating-container .rate > input[type=radio]:checked + label:hover ~ label,
+.homeFeed-container .rating-container .rate > input[type=radio]:checked ~ label:hover,
+.homeFeed-container .rating-container .rate > input[type=radio]:checked ~ label:hover ~ label,
+.homeFeed-container .rating-container .rate > label:hover ~ input[type=radio]:checked ~ label {
   color: #c59b08;
 }
 
 .homeFeed-container .rating-container button {
   display: block;
   margin: 0 auto;
+}
+
+.homeFeed-container .rating-container input[type=text] {
+  width: 200px;
+  height: 25px;
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom-color: gray;
 }
 
 .homeFeed-container .createPost-container {
