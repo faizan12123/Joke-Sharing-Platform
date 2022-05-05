@@ -66,6 +66,25 @@ nav{
     width: $leftBar-width;
     background-color: #D8D2C7;
     position: fixed;
+
+    .leftSideBar-btn{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+        
+        a{
+            text-decoration: none;
+            background-color: #FFB850;
+            color: black;
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 15px;
+            text-align:center;
+            text-transform: uppercase;
+        } 
+
+    }
 }
 .homeFeed-container{
     height: 100 - $nav-height; //change later
