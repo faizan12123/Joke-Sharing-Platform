@@ -21,16 +21,22 @@
             <form method="POST" action="/createPost">
                 @csrf
                 <div class="">
-                    <input type="text" placeholder="Name" class="form-control" id="name" name="name">
+                    <input type="text" placeholder="Name" class="" id="name" name="name" required>
                 </div>
 
-                <div class="">
-                    <input type="text" placeholder="Genre"  class="form-control" id="genre" name="genre">
+                <<div class="">
+                    <select name="genre" id="genre" required>
+                        <option value="Genre" disabled selected>Genre</option>
+                        <option value="tech">Tech</option>
+                        <option value="biology">Biology</option>
+                        <option value="business">Business</option>
+                        <option value="other">Other</option>
+                    </select>
                 </div>
                 
 
                 <div class="">
-                    <input type="text" placeholder="Joke"  class="form-control" id="joke" name="joke">
+                    <input type="text" placeholder="Joke"  class="" id="joke" name="joke" required>
                 </div>
  
                 <div class="">
