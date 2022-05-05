@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap");
 html, body {
   margin: 0;
@@ -125,6 +126,56 @@ nav .nav-right a {
   background-color: transparent;
   border-color: transparent;
   cursor: pointer;
+}
+
+.homeFeed-container .rating-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homeFeed-container .rating-container .rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+
+.homeFeed-container .rating-container .rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+
+.homeFeed-container .rating-container .rate:not(:checked) > label:before {
+  content: '★ ';
+}
+
+.homeFeed-container .rating-container .rate > input:checked ~ label {
+  color: #ffc700;
+}
+
+.homeFeed-container .rating-container .rate:not(:checked) > label:hover, .homeFeed-container .rating-container .rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+
+.homeFeed-container .rating-container .rate > input:checked + label:hover, .homeFeed-container .rating-container .rate > input:checked + label:hover ~ label, .homeFeed-container .rating-container .rate > input:checked ~ label:hover,
+.homeFeed-container .rating-container .rate > input:checked ~ label:hover ~ label, .homeFeed-container .rating-container .rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+.homeFeed-container .rating-container button {
+  display: block;
+  margin: 0 auto;
 }
 
 .homeFeed-container .createPost-container {
