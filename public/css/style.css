@@ -112,6 +112,19 @@ nav .nav-right a {
   height: 90vh;
   background-color: #FFF4E9;
   margin-left: 20vw;
+  overflow: hidden;
+}
+
+.homeFeed-container button.previous-btn {
+  text-decoration: none;
+  position: relative;
+  color: black;
+  font-size: 15px;
+  top: 7vh;
+  left: 9vw;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
 }
 
 .homeFeed-container .createPost-container {

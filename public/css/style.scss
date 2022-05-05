@@ -90,6 +90,18 @@ nav{
     height: 100 - $nav-height; //change later
     background-color: #FFF4E9;
     margin-left: $leftBar-width;
+    overflow: hidden;
+    button.previous-btn{
+        text-decoration: none;
+        position: relative;
+        color: black;
+        font-size: 15px;
+        top: 7vh;
+        left: 9vw;
+        background-color:transparent;
+        border-color: transparent;
+        cursor: pointer; 
+      }
 
     .createPost-container{
         display: flex;
