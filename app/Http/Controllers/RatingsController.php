@@ -23,7 +23,7 @@ class RatingsController extends Controller
      */
     public function create()
     {
-        //
+        return view('createRating');
     }
 
     /* Store a newly created resource in storage.
@@ -33,7 +33,9 @@ class RatingsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $rates = Ratings::firstOrCreate([
+            'rating' => $request->input('rate')
+        ]);
     }
 
     /* Display the specified resource.
