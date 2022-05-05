@@ -17,6 +17,8 @@
     <x-navigationBar/>
     <x-leftSideBar/>
     <div class="container homeFeed-container">
+        <button class="previous-btn"onclick="history.back()"> < back</button>
+        <!--if that doesn't work, remove the < in the markup-->
         <div class="createPost-container">
             <form method="POST" action="/createPost">
                 @csrf
