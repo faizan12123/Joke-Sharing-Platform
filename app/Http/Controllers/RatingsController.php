@@ -55,7 +55,7 @@ class RatingsController extends Controller
     public function show_all()
     {
         //show all ratings
-        return view('tbd', [ //must create template
+        return view('reviews', [
             // when home view is rendered, display all memes
             'rates' => Ratings::all(),
         ]);
