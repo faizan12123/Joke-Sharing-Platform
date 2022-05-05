@@ -12,5 +12,7 @@
         <li><a href="/business">Business</a></li>
         <li><a href="/other">other</a></li>
     </ul>
+
+    <a href="/createRating"> Rate us </a>
 </section>
 </div>
