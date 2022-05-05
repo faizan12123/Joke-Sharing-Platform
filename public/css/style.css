@@ -143,6 +143,13 @@ nav .nav-right a {
   border-bottom-color: gray;
 }
 
+.homeFeed-container .createPost-container form select {
+  background-color: transparent;
+  margin: 15px;
+  padding: 10px;
+  width: 180px;
+}
+
 .leftSideBar-container {
   font-family: 'Holtwood One SC', serif;
 }
