@@ -39,8 +39,8 @@ class MemeController extends Controller
         //storing User array into User database table and assigning it to the variable 'user'
         $meme = memes::firstOrCreate([
             'name' => $request->input('name'),
-            'genre' => $request->input('email'),
-            'joke' => $request->input('email')
+            'genre' => $request->input('genre'),
+            'joke' => $request->input('joke')
         ]);
         //returns the user.blade.php view and passes it the 'user' variable with the target id
         return redirect('/home');
