@@ -102,7 +102,7 @@ nav .nav-right a {
   background-color: #FFB850;
   color: black;
   font-weight: bold;
-  padding: 15px 30px;
+  padding: 5px 20px;
   border-radius: 15px;
   text-align: center;
   text-transform: uppercase;
@@ -112,6 +112,35 @@ nav .nav-right a {
   height: 90vh;
   background-color: #FFF4E9;
   margin-left: 20vw;
+}
+
+.homeFeed-container .createPost-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homeFeed-container .createPost-container form {
+  display: inline-block;
+}
+
+.homeFeed-container .createPost-container form input {
+  margin: 15px;
+  padding: 10px;
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom-color: gray;
 }
 
 .leftSideBar-container {

@@ -78,7 +78,7 @@ nav{
             background-color: #FFB850;
             color: black;
             font-weight: bold;
-            padding: 15px 30px;
+            padding: 5px 20px;
             border-radius: 15px;
             text-align:center;
             text-transform: uppercase;
@@ -90,6 +90,29 @@ nav{
     height: 100 - $nav-height; //change later
     background-color: #FFF4E9;
     margin-left: $leftBar-width;
+
+    .createPost-container{
+        display: flex;
+        height: 100%;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+
+        form{
+            display: inline-block;
+
+            input{
+                margin: 15px;
+                padding: 10px;
+                background-color: transparent;
+                border-color: transparent;
+                border-bottom-color: gray;
+                
+              }
+          }
+        
+      }
+
 }
 
 .leftSideBar-container{
