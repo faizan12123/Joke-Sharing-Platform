@@ -21,6 +21,7 @@
             <h2>Rate Us </h2>
             <form class="rate" method="POST" action="/createRating">
                 @csrf
+                <input type="text" placeholder="Name" class="" id="name" name="name"><br/>
                 <input type="radio" id="star5" name="rate" value="5" />
                 <label for="star5" title="text">5 stars</label>
                 <input type="radio" id="star4" name="rate" value="4" />
@@ -31,7 +32,7 @@
                 <label for="star2" title="text">2 stars</label>
                 <input type="radio" id="star1" name="rate" value="1" />
                 <label for="star1" title="text">1 star</label>
-                <br/>
+                <br/><br/><br/>
                 <button type="submit" style="" class="">Submit</button>
 
             </form>
