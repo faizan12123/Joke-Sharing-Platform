@@ -34,8 +34,12 @@ class RatingsController extends Controller
     public function store(Request $request)
     {
         $rates = Ratings::firstOrCreate([
-            'rating' => $request->input('rate')
+            'name' => $request->input('name'),
+            'rating' => $request->input('rate'),
         ]);
+
+        //inject all reviews; 
+        return redirect('/reviews');
     }
 
     /* Display the specified resource.
@@ -50,7 +54,11 @@ class RatingsController extends Controller
 
     public function show_all()
     {
-        //
+        //show all ratings
+        return view('tbd', [ //must create template
+            // when home view is rendered, display all memes
+            'rates' => Ratings::all(),
+        ]);
     }
 
 
