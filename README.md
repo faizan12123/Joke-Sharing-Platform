@@ -44,5 +44,5 @@ To navigate through the website, we have a left-side bar with all your possible 
 ## TEAM
 | Member | Role |
 | :---: | :------: |
-|[Faizain Hussain](https://github.com/faizan12123)| Programmer  
+|[Faizan Hussain](https://github.com/faizan12123)| Programmer  
 |[Kyle DeGuzman](https://github.com/kyledeguzmanx)| Programmer  
