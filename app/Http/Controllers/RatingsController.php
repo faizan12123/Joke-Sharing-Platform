@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class RatingsController extends Controller
 {
-    /*
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -17,7 +17,8 @@ class RatingsController extends Controller
         //
     }
 
-    /* Show the form for creating a new resource.
+    /**
+     * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
@@ -26,7 +27,8 @@ class RatingsController extends Controller
         return view('createRating');
     }
 
-    /* Store a newly created resource in storage.
+    /**
+     * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -35,14 +37,15 @@ class RatingsController extends Controller
     {
         $rates = Ratings::firstOrCreate([
             'name' => $request->input('name'),
-            'rating' => $request->input('rate'),
+            'rating' => $request->input('rating'),
         ]);
 
         //inject all reviews; 
         return redirect('/reviews');
     }
 
-    /* Display the specified resource.
+    /**
+     * Display the specified resource.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -62,7 +65,8 @@ class RatingsController extends Controller
     }
 
 
-    /* Show the form for editing the specified resource.
+    /**
+     * Show the form for editing the specified resource.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -72,7 +76,8 @@ class RatingsController extends Controller
         //
     }
 
-    /* Update the specified resource in storage.
+    /**
+     * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
