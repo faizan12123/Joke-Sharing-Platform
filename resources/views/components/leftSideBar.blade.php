@@ -13,6 +13,10 @@
         <li><a href="/other">other</a></li>
     </ul>
 
-    <a href="/createRating"> Rate us </a>
+    <ul>
+       <li> <a href="/createRating"> Rate us </a></li>
+        <li><a href="/reviews"> Past Ratings </a></li>
+    </ul>
+   
 </section>
 </div>

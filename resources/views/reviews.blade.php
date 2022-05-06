@@ -17,12 +17,13 @@
     <x-navigationBar/>
     <x-leftSideBar/>
     <div class="container homeFeed-container">
+  
         <div class="row">
             @foreach ($rates as $rate)
                 <div class="card" style="width: 100%;">
                     <div class="card-body">
                         <h5 class="card-title">Name: {{$rate->name}}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Genre: {{$rate->rating}}</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Rating: {{$rate->rating}}</h6>
                     </div>
                 </div>
             @endforeach

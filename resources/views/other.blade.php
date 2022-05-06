@@ -24,7 +24,7 @@
                 <h5 class="card-title">Name: {{$other->name}}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Genre: {{$other->genre}}</h6>
                 <p class="card-text">Joke: {{$other->joke}}</p>
-                <a href="#" class="card-link">Comments</a>
+                
   </div>
 </div>
             @endforeach
