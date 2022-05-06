@@ -13,7 +13,9 @@ This is Trenc! A social-sharing platform dedicated to sharing your favorite joke
 - SASS Stylesheets    
 
 ## DEPLOY INSTRUCTIONS  
-It's a Laravel + Docker project.   Using your ubuntu terminal run the following commands to perform DB migrations and seeding:
+It's a Laravel + Docker project.  
+
+Using your ubuntu terminal run the following commands to perform DB migrations and seeding:
 
 ```rb
 ./vendor/bin/sail artisan migrate:refresh --seed
@@ -34,9 +36,9 @@ It's a Laravel + Docker project.   Using your ubuntu terminal run the following 
 - view past ratings of the website
 - log out
 
-To navigate through the website, we have a left-side bar with all your possible options. There's also the main body of content where you can scroll through jokes. And there's also your standard top navigation bar with our logo and a log out button. 
+To navigate through the website, we have a left-side bar with all your possible options. There's also the main body of content where you can scroll through jokes. And there's also your standard top navigation bar with our logo, a home button, and a log out button. 
 
-## SCREENSHOTS
+## Video Demonstration
 
 
 ## TEAM
