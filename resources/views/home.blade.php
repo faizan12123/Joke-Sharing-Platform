@@ -24,7 +24,7 @@
                 <h5 class="card-title">Name: {{$meme->name}}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Genre: {{$meme->genre}}</h6>
                 <p class="card-text">Joke: {{$meme->joke}}</p>
-                <a href="#" class="card-link">Comments</a>
+                
   </div>
 </div>
             @endforeach

@@ -7,7 +7,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\loginController;
-
+use App\Http\Controllers\RatingsController;
 
 
 
@@ -58,7 +58,13 @@ Route::get('/createPost', [MemeController::class, 'create']);
 Route::post('/createPost',[MemeController::class, 'store'] );
 
 
+//create rating view
+Route::get('/createRating', [RatingsController::class, 'create']);
+//POST the rating
+Route::post('/createRating', [RatingsController::class, 'store']);
 
+//web page showing all reviews (view)
+Route::get('/reviews', [RatingsController::class, 'show_all']);
 
 
 

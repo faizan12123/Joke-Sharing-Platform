@@ -17,16 +17,15 @@
     <x-navigationBar/>
     <x-leftSideBar/>
     <div class="container homeFeed-container">
+  
         <div class="row">
-            @foreach ($other as $other)
+            @foreach ($rates as $rate)
                 <div class="card" style="width: 100%;">
-                <div class="card-body">
-                <h5 class="card-title">Name: {{$other->name}}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Genre: {{$other->genre}}</h6>
-                <p class="card-text">Joke: {{$other->joke}}</p>
-                
-  </div>
-</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Name: {{$rate->name}}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Rating: {{$rate->rating}}</h6>
+                    </div>
+                </div>
             @endforeach
         </div>
     </div>

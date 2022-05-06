@@ -29,10 +29,10 @@
                 <div class="">
                     <select name="genre" id="genre" required>
                         <option value="Genre" disabled selected>Genre</option>
-                        <option value="tech">Tech</option>
-                        <option value="biology">Biology</option>
-                        <option value="business">Business</option>
-                        <option value="other">Other</option>
+                        <option value="Tech">Tech</option>
+                        <option value="Biology">Biology</option>
+                        <option value="Business">Business</option>
+                        <option value="Other">Other</option>
                     </select>
                 </div>
                 
