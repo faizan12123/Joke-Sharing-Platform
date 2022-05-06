@@ -13,7 +13,16 @@ This is Trenc! A social-sharing platform dedicated to sharing your favorite joke
 - SASS Stylesheets    
 
 ## DEPLOY INSTRUCTIONS  
-It's a Laravel + Docker project. 
+It's a Laravel + Docker project.
+Using your ubuntu terminal run the following commands to perform DB migrations and seeding:
+
+```rb
+./vendor/bin/sail artisan migrate:refresh --seed
+```
+
+```rb
+./vendor/bin/sail artisan db:seed --class=MemesSeeder
+```
 
 ## GETTING STARTED
 [1] To use Trenc, you must have valid credentials. Log in using pre-exisitng credentials or create a new account.   
