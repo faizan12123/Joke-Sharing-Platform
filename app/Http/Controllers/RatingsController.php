@@ -59,7 +59,7 @@ class RatingsController extends Controller
     {
         //show all ratings
         return view('reviews', [
-            // when home view is rendered, display all memes
+            
             'rates' => Ratings::all(),
         ]);
     }

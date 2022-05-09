@@ -40,7 +40,7 @@ use App\Http\Controllers\RatingsController;
 // });
 
 
-Route:: resource('/user', UserController::class);
+// Route:: resource('/user', UserController::class);
 Route:: get('/register', [UserController::class, 'create']);
 Route:: post('/register', [UserController::class, 'store']);
 Route:: get('/login', [LoginController::class, 'login']);
@@ -51,6 +51,7 @@ Route:: get('/business', [MemeController::class, 'show_business']);
 Route:: get('/other', [MemeController::class, 'show_other']);
 Route:: get('/biology', [MemeController::class, 'show_bio']);
 Route::get('/logout', [LoginController::class, 'logout']);
+Route:: get('/', [LoginController::class, 'login']);
 
 //create post view
 Route::get('/createPost', [MemeController::class, 'create']);

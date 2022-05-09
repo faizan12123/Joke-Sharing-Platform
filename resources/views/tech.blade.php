@@ -18,7 +18,6 @@
     <x-leftSideBar/>
     <div class="container homeFeed-container">
         <div class="row">
-            
             @foreach ($tech as $tech)
                 <div class="card" style="width: 100%;">
                 <div class="card-body">
@@ -26,8 +25,8 @@
                 <h6 class="card-subtitle mb-2 text-muted">Genre: {{$tech->genre}}</h6>
                 <p class="card-text">Joke: {{$tech->joke}}</p>
                 
-  </div>
-</div>
+                </div>
+                </div>
             @endforeach
         </div>
     </div>
