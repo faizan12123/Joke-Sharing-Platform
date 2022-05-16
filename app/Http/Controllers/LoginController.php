@@ -37,6 +37,11 @@ public function login() {
     return view("/loginUI");
 }
 
+public function loginRed() {
+   
+    return redirect('/login');
+}
+
 public function logout(Request $request)
 {
     Auth::logout();
