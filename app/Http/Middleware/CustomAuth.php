@@ -20,7 +20,7 @@ class CustomAuth
     {
         //  dd(session()->all());
         $path = $request->path();
-        if (($path=="login" || $path=="register" || $path=="/") &&(Auth::check())){
+        if (($path=="login" || $path=="register") &&(Auth::check())){
            return redirect('/home');
         }
         else if (($path!="login" && $path!="register") &&(!(Auth::check()))){
