@@ -51,7 +51,9 @@ Route:: get('/business', [MemeController::class, 'show_business']);
 Route:: get('/other', [MemeController::class, 'show_other']);
 Route:: get('/biology', [MemeController::class, 'show_bio']);
 Route::get('/logout', [LoginController::class, 'logout']);
-Route:: get('/', [LoginController::class, 'loginRed']);
+Route::get('/', function () {
+    return redirect('/login');
+});
 
 //create post view
 Route::get('/createPost', [MemeController::class, 'create']);
