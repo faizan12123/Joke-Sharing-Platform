@@ -39,7 +39,7 @@ public function login() {
 
 public function loginRed() {
    
-    return redirect('/login');
+    return redirect()->route('login');
 }
 
 public function logout(Request $request)
