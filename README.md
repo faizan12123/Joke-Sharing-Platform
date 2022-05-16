@@ -26,7 +26,7 @@ Using your ubuntu terminal run the following commands to perform DB migrations a
 ```
 
 ## GETTING STARTED
-[1] To use Trenc, you must have valid credentials. Log in using pre-exisitng credentials or create a new account.   
+[1] To use Trenc, you must have valid credentials. Go to the "/login? route from the URL and Log in using pre-exisitng credentials or create a new account.   
 
 [2] Once you are logged in, you can:   
 - explore jokes
