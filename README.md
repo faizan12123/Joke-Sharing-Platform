@@ -13,9 +13,24 @@ This is Trenc! A social-sharing platform dedicated to sharing your favorite joke
 - SASS Stylesheets    
 
 ## DEPLOY INSTRUCTIONS  
-It's a Laravel + Docker project.  
+1. Clone the repository to your local machine.
 
-Using your ubuntu terminal run the following commands to perform DB migrations and seeding:
+
+3. Using an ubuntu terminal run the following command to install dependencies: 
+
+
+```
+docker run --rm \
+    -u "$(id -u):$(id -g)" \
+    -v $(pwd):/var/www/html \
+    -w /var/www/html \
+    laravelsail/php81-composer:latest \
+    composer install --ignore-platform-reqs
+```
+3. Using the example .env file, create your own .env file for your local machine.
+
+
+4. Using your ubuntu terminal run the following commands to perform DB migrations and seeding:
 
 ```rb
 ./vendor/bin/sail artisan migrate:refresh --seed
